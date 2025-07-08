@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.heading-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.heading-line::before,
+.heading-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+.heading-text {
+  color: #0a681a;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.product-box {
+  border: 2px solid #eee;
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 52px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.product-box:hover {
+  background-color: #f0fff8;
+  border-color: #0a681a;
+  box-shadow: 0 4px 12px rgba(110, 206, 147, 0.2);
+  max-height: 500px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.radio input[type="radio"] {
+  accent-color: #0a681a;
+}
+
+.unit-label {
+  font-weight: bold;
+}
+
+.badge {
+  background-color: #0a681a;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.popular-label {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  color: #090505;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.popular-label-1 {
+  position: absolute;
+  top: -12px;
+  right: 10px;
+  color: #0a681a;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.current {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.original {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.options {
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.product-box:hover .options {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.row.header {
+  font-weight: bold;
+  color: #444;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.delivery {
+  color: #0a681a;
+}
+
+.total {
+  color: #000;
+}
+
+.cart-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background-color: #0a681a;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-btn .plus {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: right;
+  font-size: 13px;
+  color: #999;
+  font-style: italic;
+  margin-top: 10px;
+}
